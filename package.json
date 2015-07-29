@@ -1,10 +1,10 @@
 {
-  "name": "Scratcher",
+  "name": "Sex Scratcher",
   "version": "0.1",
   "main": "index.html",
   "window": {
-    "title": "Fuckr",
-    "toolbar": true,
+    "title": "Sex Scratcher",
+    "toolbar": false,
     "resizable": true,
     "position": "center",
     "width": 1024,
