@@ -419,7 +419,7 @@ Scratcher = (function () {
 })();
 
 
-(function () {
+
     function supportsCanvas() {
         return !!document.createElement('canvas').getContext;
     }
@@ -439,9 +439,9 @@ Scratcher = (function () {
         if (pct < 10) {
             if (!$('.scratcher').hasClass('complete')) {
                 $('.scratcher').addClass('complete');
-               if (!$('#moment').hasClass('appear')) {
-                    $('#moment').addClass('appear')
-                }
+              // if (!$('#moment').hasClass('appear')) {
+               //     $('#moment').addClass('appear')
+              //  }
             }
         }
     }
@@ -467,23 +467,20 @@ Scratcher = (function () {
             scratcher.reset();
             if ($('.scratcher').hasClass('complete')) {
                 $('.scratcher').removeClass('complete');
-                if ($('#moment').hasClass('appear')) {
-                    $('#moment').removeClass('appear')
-                }
+              //  if ($('#moment').hasClass('appear')) {
+             //       $('#moment').removeClass('appear')
+             //   }
             }
         });
     }
 
     $(function () {
-        if (supportsCanvas()) {
+       
             initScratcher();
-        } else {
-            $('#scratcher-box').hide();
-            $('#lamebrowser').show();
-        }
+      
     });
 
-})();
+
 
 
 
@@ -543,7 +540,7 @@ body {
 
 <button id="reset">重置</button>
 
-<audio controls preload="metadata" id="voice" style="display:none; float:left;">
+<audio controls preload="metadata" id="voice" style="display:none;">
 	<source src="sex.ogg" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
